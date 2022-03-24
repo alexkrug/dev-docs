@@ -8,7 +8,7 @@ There are two components required: **Chain Listener** and **Chain Submitter**.
 
 ### 1.1 Chain Listener
 Chain listener fetches data from the source chain and poly chain, including block header, cross-chain events emitted from CCM, and Merkle proofs used to verify the cross-chain message in the poly chain.
-And the interface listed is necessary.
+The listed interface is necessary.
 
 ```go
 type IChainListener interface {
@@ -34,9 +34,9 @@ type IChainListener interface {
 ```
 
 ### 1.2 Chain Submitter
-Chain Submitter delivers messages to the target chain, including **validator changes** of poly chain to CCD and **cross-chain messages**.
-Additionally, Chain Submitter will check whether the transaction has been verified in CCD.
-And the interface listed is necessary.
+Chain Submitter delivers messages to the target chain, including **validator changes** of Poly chain to CCD and **cross-chain messages**.
+Additionally, Chain Submitter checks whether the transaction has been verified within the CCD.
+The listed interface is necessary.
 
 ```go
 type IChainSubmitter interface {
@@ -50,7 +50,8 @@ type IChainSubmitter interface {
   ProcessTx(*msg.Tx, msg.PolyComposer) error
 }
 ```
-##2. Develop Steps on Poly-Relayer
+##2. Develop Steps on Poly-Relayer.
+
 Poly-Relayer is a relayer project maintained by Poly Network.
 If you choose to develop based on Poly-Relayer, please follow the listed steps.
 
@@ -67,9 +68,10 @@ Implement interface `IChainListener` and `IChainSubmitter` for the new chain.
 Register `ChainListener` and `ChainSubmitter` in [selectors](https://github.com/polynetwork/poly-relayer/blob/main/relayer/relayer.go#L73) located in the `relayer.go` file.
 
 ##3. Preparation for Launch
-The configs are required when launching relayer:
 
-- Make sure necessary configuration is specified in `config.json,` including CCM contract, CCD contract, and other details for the chain.
+The configurations are required when launching relayer:
+
+- Make sure the necessary configuration is specified in `config.json,` including CCM contract, CCD contract, and other details for the chain.
 - You can see a [sample](https://github.com/polynetwork/poly-relayer/blob/main/config.sample.json) here.
 
 > [!Note|style:flat|label:Notice]
