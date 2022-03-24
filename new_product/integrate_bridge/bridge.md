@@ -14,7 +14,7 @@ If you want to integrate into the Poly bridge, please get in touch with Poly tea
 
 ### Get cross chain fee
 
-This API returns a transaction fee charged on the source chain in a cross-chain transaction.
+This API returns the transaction fee charged on the source chain in a cross-chain transaction.
 And if `SwapTokenHash` is specified, the transferable amount will be returned.
 
 API
@@ -57,7 +57,7 @@ Example Response
 }
 ```
 ### Get the cross chain transaction status
-This API returns the details of the assigned hash, and you can view the cross-chain procedure through the `TransactionState` in the response.  
+This API returns the details of the assigned hash, which you can view in the cross-chain procedure in the `TransactionState` response.
 
 API
 ```
@@ -308,7 +308,7 @@ Example Response
 
 ### Get token mapping relationship between different chains
 
-This API returns mapping relations between source chain and target chain of assigned token.
+This API returns mapping relations between the source chain and target chain for the selected token.
 
 API
 ```
@@ -366,7 +366,7 @@ Example Response
 
 ### Get the expected cross-chain duration
 
-This API returns the expected elapsed time for token to transfer from source chain to target chain.
+This API returns the expected elapsed time for a token to transfer from the source chain to the target chain.
 
 
 API
