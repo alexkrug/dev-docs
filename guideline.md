@@ -1,8 +1,8 @@
 <h1 align="center">Guidelines for Reading</h1>
 
-Similar to any other cross-chain service, the accession to Poly cross-chain ecosystem will vary from section to section depending on your specific needs. 
+Like other cross-chain service, there exists a numerous ways to join the Poly cross-chain ecosystem which vary according to your needs. 
 
-Here we presuppose four major goals and provide corresponding tutorials for you to realize your goals. You can either click the quick guide below directly or follow the menu in the navigation. 
+Here we presuppose four major goals and offer the corresponding tutorials. To access the tutorials, you can either click the headings in the guide directly below or follow the menu in the navigation. 
 
 <div align=center><img src="resources/reading_guideline.png" alt=""/></div>
 
@@ -20,7 +20,7 @@ Please read this section if you want to import assets to the Poly cross-chain ec
 
 ## Customize Business Logic Contracts
 
-Please read this section if you want to deploy business contract:
+Please read this section if you want to deploy a business contract:
 
 - [Customize Business Logic Contracts](new_product/integrate_contracts/readme.md)
 
